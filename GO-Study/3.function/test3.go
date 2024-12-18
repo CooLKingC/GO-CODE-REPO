@@ -17,6 +17,11 @@ func main() {
 	r3, r4 := fun4()
 	fmt.Println("r3 = ", r3)
 	fmt.Println("r4 = ", r4)
+
+	func() {
+		fmt.Println("this is an anonymous function ")
+	}()
+
 }
 
 func fun1(a string, b int) int {
